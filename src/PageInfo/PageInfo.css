@@ -1,0 +1,29 @@
+.pageInfoBtn {
+  grid-column: 5/9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1em;
+  padding-left: 3em;
+}
+
+.pageInfoBtn button {
+  font-size: 2rem;
+  width: 1.8em;
+  border-radius: 50%;
+  border: 3px solid var(--fccGreen);
+  background: var(--fccBlack);
+  color: #fff;
+  margin-left: 0.25em;
+  font-family: 'Bevan';
+  cursor: pointer;
+}
+
+@media screen and (orientation: landscape) {
+  .pageInfoBtn {
+    grid-column: 7/9;
+    grid-row: 1;
+    justify-content: flex-start;
+    padding-top: 1em;
+  }
+}

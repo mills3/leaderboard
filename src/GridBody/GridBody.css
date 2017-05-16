@@ -1,0 +1,64 @@
+.gridBody {
+  overflow-y: scroll;
+  grid-column: 1/9;
+  position: relative;
+}
+
+.personRow {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background: rgba(0,0,0,0.8);
+}
+.personRow:hover {
+  background: #000;
+}
+
+.personRow > * {
+  padding: 0.5em;
+}
+
+.personPosition {
+  flex: 1;
+}
+
+.personName {
+  flex: 6;
+  position: relative;
+  color: #fff;
+}
+.personName img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.personName p {
+  margin-left: 15%;
+}
+
+.personRecentScore {
+  flex: 2;
+  text-align: center;
+}
+
+.personAllTimeScore {
+  flex: 2;
+  text-align: center;
+}
+
+.active {
+  background: rgba(0,99,0,.5);
+}
+
+@media screen and (orientation: landscape) {
+  .gridBody {
+    grid-column: 2/8;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .gridBody {
+    grid-column: 2/8;
+  }
+}

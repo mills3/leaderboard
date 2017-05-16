@@ -1,0 +1,72 @@
+
+.gridHead {
+  grid-column: 1/9;
+  display: flex;
+  justify-content: space-between;
+  background: var(--fccGreen);
+  color: #fff;
+
+  /*===Have to add this to account for scrollbar on body :( ===*/
+  overflow-y: scroll;
+}
+
+.gridHead > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6em 0.5em;
+}
+.position {
+  flex: 1;
+  background: var(--fccBlack);
+}
+
+.name {
+  flex: 6;
+}
+
+.monthScore {
+  flex: 2;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+}
+
+.allTimeScore {
+  flex: 2;
+  cursor: pointer;
+  position: relative;
+}
+.allTimeScore::before, .monthScore::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  border-top: 5px solid #fff;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.allTimeScore p, .monthScore p {
+  z-index: 9;
+}
+
+.activeHeading {
+  background: var(--fccBlack);
+}
+
+
+@media screen and (orientation: landscape) {
+  .gridHead {
+    grid-column: 2/8;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .gridHead {
+    grid-column: 2/8;
+  }
+}

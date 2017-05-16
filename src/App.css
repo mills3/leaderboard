@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Bevan');
+
+html {
+  font-size: 12px;
+}
+
+.App {
+  --fccGreen: #006400;
+  --fccBlack: #2a2a2a;
+  --fccGrey: #e0e0e0;
+
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: var(--fccGrey);
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto auto auto 1fr auto;
+}
+
+.App > *:not(.bgImage) {
+  z-index: 5;
+}
+
+.bgImage {
+  background: url('images/ffcSmall.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 90%;
+  height: 130%;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  z-index: 0;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: landscape) {
+  .App {
+    grid-template-rows: auto auto 1fr;
+  }
+
+  .bgImage {
+    background-image: url('images/fccLarge.png');
+    width: 70%;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+  .bgImage {
+    width: 70%;
+    left: 15%;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 18px;
+  }
+}
