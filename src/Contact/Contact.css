@@ -1,8 +1,8 @@
 
 .contact {
-  grid-column: 1/5;
+  grid-column: 1/9;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding-bottom: 1em;
 }
@@ -10,7 +10,7 @@
 .contact a {
   padding: 1em 1em;
   margin-right: 0.25em;
-  background: rgba(0,0,0,0.8);
+  background: var(--fccBlack);
   color: #fff;
 }
 .contact a span {

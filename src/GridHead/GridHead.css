@@ -18,7 +18,7 @@
 }
 .position {
   flex: 1;
-  background: var(--fccBlack);
+  /*background: var(--fccBlack);*/
 }
 
 .name {
@@ -28,7 +28,7 @@
 .monthScore {
   flex: 2;
   cursor: pointer;
-  color: #fff;
+  /*color: #fff;*/
   position: relative;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .activeHeading {
-  background: var(--fccBlack);
+  background: var(--fccGreen);
 }
 
 

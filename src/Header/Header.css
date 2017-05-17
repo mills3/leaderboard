@@ -1,6 +1,6 @@
 header {
   color: var(--fccGreen);
-  grid-column: 1/9;
+  grid-column: 1/8;
   display: flex;
   justify-content: center;
   align-items: center;
