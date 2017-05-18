@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Header from './Header/Header';
-import Contact from './Contact/Contact';
-import PageInfo from './PageInfo/PageInfo';
+// import Contact from './Contact/Contact';
+// import PageInfo from './PageInfo/PageInfo';
 import GridHead from './GridHead/GridHead';
 import GridBody from './GridBody/GridBody';
 import Footer from './Footer/Footer';
@@ -56,12 +56,13 @@ class App extends Component {
         <div className="App">
           <div className="bgImage"></div>
           <Header />
-          <Contact />
-          <PageInfo handleClick={this.toggleModal}/>
+          {/*<Contact />
+          <PageInfo handleClick={this.toggleModal}/>*/}
           <GridHead handleRecentClick={this.sortByRecent} handleAllTimeClick={this.sortByAllTime} byMonth={this.state.sortedByMonth}/>
           <GridBody data={this.state.leaderboardData} byMonth={this.state.sortedByMonth}/>
+          <Footer handleClick={this.toggleModal}/>
           <InfoModal modalOpen={this.state.modalOpen} handleClick={this.closeModal}/>
-          <Footer />
+
         </div>
       );
     }

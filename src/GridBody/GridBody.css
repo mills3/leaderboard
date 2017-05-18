@@ -16,6 +16,7 @@
 
 .personRow > * {
   padding: 0.5em;
+  font-family: 'Lato', sans-serif;
 }
 
 .personPosition {
@@ -60,5 +61,11 @@
 @media screen and (min-width: 700px) {
   .gridBody {
     grid-column: 2/8;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gridBody {
+    grid-column: 3/7;
   }
 }

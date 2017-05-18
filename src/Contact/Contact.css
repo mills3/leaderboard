@@ -1,6 +1,6 @@
 
 .contact {
-  grid-column: 1/9;
+  grid-column: 1/5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,14 +8,23 @@
 }
 
 .contact a {
-  padding: 1em 1em;
-  margin-right: 0.25em;
-  background: var(--fccBlack);
+  padding: 0.7em;
+  font-family: 'Lato', sans-serif;
+  color: var(--fccGreen);
+  text-decoration: none;
+  border: 1px solid var(--fccGreen);
+  border-radius: 6px;
+  background: #eee;
+  transition: background 0.2s ease-in-out;
+}
+
+.contact a:hover {
   color: #fff;
+  background: var(--fccGreen);
 }
-.contact a span {
+/*.contact a span {
   color: #FFAD25;
-}
+}*/
 
 
 @media screen and (orientation: landscape) {

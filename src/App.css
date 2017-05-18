@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bevan');
+@import url('https://fonts.googleapis.com/css?family=Bevan|Francois+One|Inconsolata|Lato');
 
 html {
   font-size: 12px;
@@ -30,7 +30,7 @@ html {
   background-size: contain;
   background-position: center center;
   width: 90%;
-  height: 130%;
+  height: 110%;
   position: absolute;
   top: 0;
   left: 5%;
@@ -76,5 +76,9 @@ html {
 @media screen and (min-width: 1000px) {
   html {
     font-size: 18px;
+  }
+  .bgImage {
+    width: 50%;
+    left: 25%;
   }
 }
