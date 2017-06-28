@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /*padding: 0.6em;*/
+  padding: 0.6em;
   font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
 }
@@ -46,7 +46,7 @@
   position: absolute;
   width: 0;
   height: 0;
-  top: 70%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%);
   border-top: 5px solid #fff;

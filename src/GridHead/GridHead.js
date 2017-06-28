@@ -16,7 +16,7 @@ const GridHead = (props) => {
       <div className="position">#</div>
       <div className="name">Name</div>
       <div className={`monthScore ${activeMonth}`} onClick={props.handleRecentClick}>Recent</div>
-      <div className={`allTimeScore ${activeAllTime}`} onClick={props.handleAllTimeClick}>All Time</div>
+      <div className={`allTimeScore ${activeAllTime}`} onClick={props.handleAllTimeClick}>Ever</div>
     </div>
   );
 }
